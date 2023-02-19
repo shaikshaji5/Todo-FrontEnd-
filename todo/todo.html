@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <script src="/todojs.js"></script>
+    <link rel="stylesheet" href="/todocss.css">
+    <title>plantodo</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="ChangePlaceholder()">
+    <div class="main" id="main">
+        <img id="clock" src="/icons/clock.png" alt="bg">
+
+            <span id="navbar">
+                <span><img id="icon1" src="/icons/home.png" alt=""></span>
+                <span><img id="icon2" src="/icons/user.png" alt=""></span>
+                <span><img id="icon3" src="/icons/question.png" alt=""></span>
+            </span>
+        <div id="top"><h1 align="center" 
+            >Make It Happen</h1></div>
+        <span class="about">
+            <h3>About This Page</h3>
+            <p>
+                A simple to-do list website. helps make personal or professional tasks easier to organize.
+            </p>
+        </span>
+        <div id="mid-container">
+                <div id="taskbox1">
+                    
+                    <P> TO DO'S</P>
+                    <h3 > Add your task</h3>
+                    <video id="vid" width="60%" height="40%"  autoplay loop muted>
+                        <source src="/video/intro_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video><br>
+                    <input id="firstInput"  
+                    onload="ChangePlaceholder()" type="text" 
+                    placeholder="Enter your task" >
+                    <p id="taskfields" align="center">
+                    
+                    </p>
+                    <button id="addbtn" onclick="addField()">new task</button>
+                    <button id="rembtn" onclick="removeField()" >remove field</button>
+
+                </div>
+                <div id="todoPicker">
+                    <h3>quick adds</h3>
+                    <span ><p id="1" onclick="sendtotask(id)">do assignment</p></span>
+                    <span > <p id="2" onclick="sendtotask(id)"> work on project</p></span>
+                    <span ><p id="3" onclick="sendtotask(id)">check deadlines</p></span>
+                    </div>
+            </div>
+
+        <button id="modebtn" onclick="modeChange()"><img src='/icons/moon1.png' alt='' width='50px' height='50px'></button>
+    <p id="mode2"></p>
+<div id="arrow">
+    <img src="/icons/arrow.png" alt="">
+</div>
+</div>
+<div id="phone">
+    <img src="/icons/phone.png" alt="">
+    <form action="#">
+        <label for="phone">Get todo as sms</label><br>
+        <input type="text" placeholder="Enter phone number">
+    </form>
+</div>
+<div id="bottomp"> 
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div><h1>Technology Used</h1>
+This is completely
+a front-end-based web application
+just made to demonstrate
+the design and
+basic functionalities.
+Made using HTML, CSS, and JavaScript.
+A cool-looking UI that gives you a translucent glass feel,which is very satisfying
+If you like my design, drop a like on my LinkedIn post.
+:)
+<h1>Features</h1>
+<p>*Dark and light modes<br>
+   *Add and remove more fields with few simple clicks
+   *Quick adds , to make it easier to include frequently occurring tasks.
+   *Get your to-do as remainder at specific time(non functional)
+
+</p>
+    </div>
+<div id="footer">
+    <h3>Let's Connect</h3>
+    <img id="footerimg" src="/img/foooter.png" alt="bg">
+
+    <div id="links">
+            <span><a href="https://www.linkedin.com/in/shajidhussain/"><img src="/icons/linkedin.png" alt=""></a></span>
+            <span><a href="https://github.com/shaikshaji5"><img src="/icons/github.png" ></a></span>
+            <span><a href="hshaik@gmail.com"><img src="/icons/gmail.png"></a></span>
+            <span><a href="https://www.instagram.com/sha.z.e/"><img src="/icons/instagram.png" ></a></span>
+        
+    </div>
+    <div id="profile">
+        <span>
+        <p>developed By</p>
+        <h2>shaji</h2>
+        </span>
+    </div>
+    </div>
+</body>
+</html>
